@@ -25,15 +25,15 @@ Here is a simple documentation on how to use AWS CLI to build an AWS VPC along w
 
 ## Required Resources
 
->2 public subnets
+>2 Public subnets
 
->1 private subnet
+>1 Private subnet
 
->1 public route table
+>1 Public route table
 
->1 private route table
+>1 Private route table
 
->1 elastic IP
+>1 Elastic IP
 
 >1 NAT gateway
 
@@ -41,9 +41,9 @@ Here is a simple documentation on how to use AWS CLI to build an AWS VPC along w
 
 >1 Bastion instance
 
->1 frontend webserver instance
+>1 Frontend webserver instance
 
->1 backend database instance
+>1 Backend database instance
 <br />
 <br />
 
