@@ -1,8 +1,4 @@
-# VPC_creation_WP_installation_using_AWSCLI
-VPC creation and Wordpress installation using AWS CLI
-
-
-# *Wordpress installation via bastion server using AWS-CLI*
+# VPC creation and Wordpress deployment using AWS CLI
 
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
@@ -272,57 +268,6 @@ $ aws ec2 create-route --route-table-id rtb-02dcf33e8169f7924 --destination-cidr
 To confirm that the route has been created and is active, we can describe the route table using the following describe-route-tables command.
 ```sh
 $ aws ec2 describe-route-tables --filters "Name=vpc-id,Values=vpc-03085adf5b5ffa75e"
-{
-    "RouteTables": [
-        {
-            "Associations": [],
-            "PropagatingVgws": [],
-            "RouteTableId": "rtb-02dcf33e8169f7924",
-            "Routes": [
-                {
-                    "DestinationCidrBlock": "172.16.0.0/16",
-                    "GatewayId": "local",
-                    "Origin": "CreateRouteTable",
-                    "State": "active"
-                }
-            ],
-            "Tags": [],
-            "VpcId": "vpc-03085adf5b5ffa75e",
-            "OwnerId": "257637015312"
-        },
-        {
-            "Associations": [
-                {
-                    "Main": true,
-                    "RouteTableAssociationId": "rtbassoc-0c409c8f5a7e7c3f6",
-                    "RouteTableId": "rtb-0a890bf93736cb0a2",
-                    "AssociationState": {
-                        "State": "associated"
-                    }
-                }
-            ],
-            "PropagatingVgws": [],
-            "RouteTableId": "rtb-0a890bf93736cb0a2",
-            "Routes": [
-                {
-                    "DestinationCidrBlock": "172.16.0.0/16",
-                    "GatewayId": "local",
-                    "Origin": "CreateRouteTable",
-                    "State": "active"
-                },
-                {
-                    "DestinationCidrBlock": "0.0.0.0/0",
-                    "GatewayId": "igw-0b2e7ae4a59356d8b",
-                    "Origin": "CreateRoute",
-                    "State": "active"
-                }
-            ],
-            "Tags": [],
-            "VpcId": "vpc-03085adf5b5ffa75e",
-            "OwnerId": "257637015312"
-        }
-    ]
-}
 ```
 
 ## Creating security groups
