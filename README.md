@@ -4,6 +4,8 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 ## Description
 Terraform has been the standard choice for creating and managing AWS infrastructure. However, I am exploring the possibilities of using AWS CLI to create the infra to launch a Wordpress website.
+<br />
+
 Here is a simple documentation on how to use AWS CLI to build an AWS VPC along with private/public Subnet and Network Gateways for the VPC. We will create a VPC with three Subnets: 1 Private and 2 Public, a NAT Gateway, an Internet Gateway, and two Route Tables. We will launch a bastion instance on the first public subnet, a frontend instance on the second public subnet, and a database instance on the private subnet.
 <br />
 
