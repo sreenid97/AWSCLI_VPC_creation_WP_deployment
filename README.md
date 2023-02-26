@@ -3,10 +3,16 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 ## Description
-Terraform has been the standard choice for creating and managing AWS infrastructure. However, I am exploring the possibilities of using AWS CLI to create the infra to launch a Wordpress website.
+Terraform has been the standard choice for creating and managing AWS infrastructure. However, I am exploring the possibilities of using AWS Command Line Interface(CLI) to create the infra to launch a Wordpress website.
 <br />
 
-Here is a simple documentation on how to use AWS CLI to build an AWS VPC along with private/public Subnet and Network Gateways for the VPC. We will create a VPC with three Subnets: 1 Private and 2 Public, a NAT Gateway, an Internet Gateway, and two Route Tables. We will launch a bastion instance on the first public subnet, a frontend instance on the second public subnet, and a database instance on the private subnet.
+AWS CLI is a command-line tool provided by AWS that enables us to interact with AWS services and resources through a terminal or command prompt.
+
+AWS CLI supports a wide range of commands that can be used to manage and configure AWS resources. We can also use AWS CLI to automate tasks and build custom scripts that perform complex tasks.
+<br />
+
+This guide will walk you through the steps to create a Virtual Private Cloud (VPC) in AWS using the AWS CLI. We will create a VPC with three Subnets: one Private and two Public, a NAT Gateway, an Internet Gateway, and two Route Tables. We will launch a bastion instance on the first public subnet, a frontend webserver on the second public subnet, and a database server on the private subnet.
+
 <br />
 
 ## Features
@@ -845,4 +851,4 @@ Now we can access the website using the public IP, public DNS name, or domain na
 
 ## Conclusion
 
-This is a simple documentation on how to use AWS CLI to build an AWS VPC along with private/public Subnet and Network Gateways for the VPC. We will create a VPC with three Subnets: 1 Private and 2 Public, a NAT Gateway, an Internet Gateway, and two Route Tables. We will launch a bastion instance on the first public subnet, a frontend webserver on the second public subnet, and a database server on the private subnet.
+This guide will walk you through the steps to create a Virtual Private Cloud (VPC) in AWS using the AWS Command Line Interface (CLI). We will create a VPC with three Subnets: one Private and two Public, a NAT Gateway, an Internet Gateway, and two Route Tables. We will launch a bastion instance on the first public subnet, a frontend webserver on the second public subnet, and a database server on the private subnet.
